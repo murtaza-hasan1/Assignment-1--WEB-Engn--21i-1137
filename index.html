@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Job Listings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header class="header"></header>
+  <div class="container">
+    <div id="search" class="search search--hidden">
+      <div class="search__content" id="search-content">
+      </div>
+      <button id="clear" class="search__clear">Clear</button>
+    </div>
+    <div class="jobs" id="jobs">
+    </div>
+    <div id="job-details-popup" class="modal-popup">
+      <div class="modal-content">
+        <span class="close-popup" id="close-details-popup">&times;</span>
+        <h2>Job Details</h2>
+        <div id="job-details-content">
+          <!-- Job details will be displayed here -->
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <!-- The "Add Job" button -->
+<button id="add-job" class="adb">Add Job</button>
+
+<!-- The modal popup for adding a new job -->
+<div id="add-job-popup" class="modal-popup">
+  <div class="modal-content">
+    <span class="close-popup">&times;</span>
+    <h2>Add New Job</h2>
+    <form id="new-job-form">
+      <label for="company">Company Name:</label>
+      <input type="text" id="company" class="rounded-input" required>
+
+      <label for="position">Position:</label>
+      <input type="text" id="position" class="rounded-input" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" class="rounded-input" required>
+
+      <label for="level">Level:</label>
+      <input type="text" id="level" class="rounded-input" required>
+
+      <label for="tools">Tools (comma-separated):</label>
+      <input type="text" id="tools" class="rounded-input" required>
+
+      <button type="submit" class="rounded-button">Add Job</button>
+    </form>
+  </div>
+</div>
+</div>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">21i-1137, MURTAZA HASAN</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
